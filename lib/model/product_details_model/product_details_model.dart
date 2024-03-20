@@ -21,8 +21,10 @@ final String organic ;
 
 final String flavor;
 
+final int addCount;
 
-ProductModel({required this.brandName,required this.review,required this.image,required this.name,required this.price,required this.discount,required this.offer,
+
+ProductModel(this.addCount,{required this.brandName,required this.review,required this.image,required this.name,required this.price,required this.discount,required this.offer,
 required this.rating,required this.brand,required this.type,required this.quantity,required this.sheilfLief,required this.organic,required this.flavor});
    
 

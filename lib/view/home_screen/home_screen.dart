@@ -52,16 +52,50 @@ class _HomeScreenState extends State<HomeScreen> {
             child: Column(
               children: [
                 Container(
-                  height: 130,
-                  width: double.infinity,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(30),
-                  ),
-                  child: Image.asset(
-                    ImageConstants.grocery_banner,
-                    fit: BoxFit.fill,
-                  ),
-                ),
+                    height: 130,
+                    width: double.infinity,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(30),
+                    ),
+                    child: Container(
+                      padding: const EdgeInsets.all(15),
+                      decoration: BoxDecoration(
+                        color: Colors.yellow.shade200,
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                      height: 150,
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        children: [
+                          Image.asset(
+                            ImageConstants.grocery_banner,
+                            fit: BoxFit.cover,
+                          ),
+                          Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Text(
+                                'Organic',
+                                style: TextStyle(
+                                  fontSize: 35,
+                                  fontWeight: FontWeight.w900,
+                                  color: ColorConstants.primaryBlack
+                                      .withOpacity(.5),
+                                ),
+                              ),
+                              Text(
+                                'vegetables',
+                                style: TextStyle(
+                                  fontSize: 22,
+                                  color: ColorConstants.primaryBlack
+                                      .withOpacity(.5),
+                                ),
+                              ),
+                            ],
+                          )
+                        ],
+                      ),
+                    )),
                 SizedBox(
                   height: 20,
                 ),

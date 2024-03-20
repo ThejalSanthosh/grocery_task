@@ -270,8 +270,10 @@ class ProductScreen extends StatelessWidget {
                       Spacer(),
                       ElevatedButton(
                           style: ElevatedButton.styleFrom(
+                              shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(12)),
                               padding: EdgeInsets.symmetric(horizontal: 100),
-                              backgroundColor: ColorConstants.secondaryGreen),
+                              backgroundColor: ColorConstants.primaryGreen),
                           onPressed: () {
                             Navigator.push(
                                 context,
